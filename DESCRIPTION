@@ -6,7 +6,9 @@ Version: 1.0
 Date: 2015-04-20
 Author: Marc Pybus
 Maintainer: Marc Pybus <marc.pybus@upf.edu>
-Description: This package uses scores from several selection tests in simulated population genetics datasets to estimate parameters of a classfication algorithm (hierarchical boosting). The resulting algorithm then can be used to classify real genomic regions into differnt types of selective sweeps. The package does not simulate the training datasets nor calculate the selection tests, these need to be calculated prior to the use of this package.
+Description: This package uses scores from several selection tests in simulated population genetics datasets to estimate parameters of a classfication algorithm (hierarchical boosting). The resulting algorithm then can be used to classify real genomic regions into different types of selective sweeps. The package does not simulate the training datasets nor calculate the selection tests, these need to be calculated prior to the use of this package.
 License: GPL (>=2)
 Imports: mboost, corpora, gridExtra
 Packaged: 2015-04-27 10:03:59 UTC; marc
+Suggests: knitr
+VignetteBuilder: knitr
