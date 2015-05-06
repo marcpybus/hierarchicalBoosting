@@ -2,7 +2,7 @@ Package: hierarchicalBoosting
 Type: Package
 Title: Classification of selective sweeps through boosting-based
         decision trees
-Version: 1.0
+Version: 0.99.0
 Date: 2015-04-20
 Author: Marc Pybus
 Maintainer: Marc Pybus <marc.pybus@upf.edu>
