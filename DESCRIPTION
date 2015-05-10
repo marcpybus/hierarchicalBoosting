@@ -2,13 +2,25 @@ Package: hierarchicalBoosting
 Type: Package
 Title: Classification of selective sweeps through boosting-based
         decision trees
-Version: 1.0
+Version: 0.99.0
 Date: 2015-04-20
+Authors@R: c(person(given = "Marc", family = "pybus",
+	            email = "marc.pybus@upf.edu",
+		    role  = c("aut", "cre")),
+	     person(given = "Pierre", family = "Luisi",
+	            email = "pierre.luise@upf.edu",
+		    role  = "ctb"),
+	     person(given = "Giovanni Marco", family = "Dall'Olio",
+	            email = "giovanni.dallolio@upf.edu",
+		    role = "ctb"))
 Author: Marc Pybus
 Maintainer: Marc Pybus <marc.pybus@upf.edu>
-Description: This package uses scores from several selection tests in simulated population genetics datasets to estimate parameters of a classfication algorithm (hierarchical boosting). The resulting algorithm then can be used to classify real genomic regions into different types of selective sweeps. The package does not simulate the training datasets nor calculate the selection tests, these need to be calculated prior to the use of this package.
+Description: This package uses scores from several selection tests in simulated population genetics datasets to estimate parameters of a classification algorithm (hierarchical boosting). The resulting algorithm then can be used to classify real genomic regions into different types of selective sweeps. The package does not simulate the training datasets nor calculate the selection tests, these need to be calculated prior to the use of this package.
 License: GPL (>=2)
-Imports: mboost, corpora, gridExtra
+Imports: 
+    mboost, 
+    corpora, 
+    gridExtra
 Packaged: 2015-04-27 10:03:59 UTC; marc
 Suggests: knitr
 VignetteBuilder: knitr
