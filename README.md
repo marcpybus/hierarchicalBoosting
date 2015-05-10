@@ -10,4 +10,5 @@ How to install:
 library(devtools)
 dev_mode()
 install_github("marcpybus/hierarchicalBoosting")
+vignette("manual")
 ```
