@@ -4,7 +4,7 @@
 	Generate validation plots for a estimated hierarchicalBoosting object.
 }
 \description{
-	This function genetares three different validation plots for each estimated boosting function: (1) coefficient convergence plot: tracks the coefficient values at each iteration, one must control that coefficients reach convergence before stopping the algorithm, (2) standardized coefficient boxplot: shows the relevance of each input selection test at the estimeted boosting function and (3) boosting scores distributions: shows the score distributions for each competing scenarios, it also shows the significance thresholds used. 
+	This function generates three different validation plots for each estimated boosting function: (1) coefficient convergence plot: tracks the coefficient values at each iteration, one must control that coefficients reach convergence before stopping the algorithm, (2) standardized coefficient boxplot: shows the relevance of each input selection test at the estimeted boosting function and (3) boosting scores distributions: shows the score distributions for each competing scenarios, it also shows the significance thresholds used. 
 }
 \usage{
        plot.HierarchicalBoosting(hierarchicalBoosting, config_table, input, name = "")
