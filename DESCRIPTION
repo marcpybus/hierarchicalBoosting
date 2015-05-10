@@ -15,7 +15,7 @@ Authors@R: c(person(given = "Marc", family = "pybus",
 		    role = "ctb"))
 Author: Marc Pybus
 Maintainer: Marc Pybus <marc.pybus@upf.edu>
-Description: This package uses scores from several selection tests in simulated population genetics datasets to estimate parameters of a classfication algorithm (hierarchical boosting). The resulting algorithm then can be used to classify real genomic regions into different types of selective sweeps. The package does not simulate the training datasets nor calculate the selection tests, these need to be calculated prior to the use of this package.
+Description: This package uses scores from several selection tests in simulated population genetics datasets to estimate parameters of a classification algorithm (hierarchical boosting). The resulting algorithm then can be used to classify real genomic regions into different types of selective sweeps. The package does not simulate the training datasets nor calculate the selection tests, these need to be calculated prior to the use of this package.
 License: GPL (>=2)
 Imports: 
     mboost, 
