@@ -24,8 +24,8 @@ Maintainer: Marc Pybus <marc.pybus@upf.edu>
 }
 \examples{
 # load input dataset
-input_path <- system.file("exdata/training_data.txt", package="hierarchicalBoosting")
-input <- read.table(input_path,header=TRUE,stringsAsFactors=FALSE)
+simulations.data.path <- system.file("exdata/training_data.txt", package="hierarchicalBoosting")
+simulations.data <- read.table(simulations.data.path,header=TRUE,stringsAsFactors=FALSE)
 
 # define individual boosting parameters
 boosting_1<-c()
@@ -67,7 +67,7 @@ bootstrap_sampling<-0.9
 check.HierarchicalBoosting(config_table,input)
 
 # create hierarchicalBoosting object
-hierarchicalBoosting <- train.HierarchicalBoosting(input, config_table, bootstrap_iterations, bootstrap_sampling)
+hierarchicalBoosting <- train.HierarchicalBoosting(simulations.data, config_table, bootstrap_iterations, bootstrap_sampling)
 
 # create validation plots
 plot.HierarchicalBoosting(hierarchicalBoosting, config_table, input)

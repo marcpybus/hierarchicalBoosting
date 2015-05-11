@@ -4,10 +4,10 @@
 	Generate validation plots for a estimated hierarchicalBoosting object.
 }
 \description{
-	This function genetares three different validation plots for each estimated boosting function: (1) coefficient convergence plot: tracks the coefficient values at each iteration, one must control that coefficients reach convergence before stopping the algorithm, (2) standardized coefficient boxplot: shows the relevance of each input selection test at the estimeted boosting function and (3) boosting scores distributions: shows the score distributions for each competing scenarios, it also shows the significance thresholds used. 
+	This function generates three different validation plots for each estimated boosting function: (1) coefficient convergence plot: tracks the coefficient values at each iteration, one must control that coefficients reach convergence before stopping the algorithm, (2) standardized coefficient boxplot: shows the relevance of each input selection test at the estimeted boosting function and (3) boosting scores distributions: shows the score distributions for each competing scenarios, it also shows the significance thresholds used. 
 }
 \usage{
-	plot.HierarchicalBoosting(hierarchicalBoosting, config_table, input, name = "")
+       plot.HierarchicalBoosting(hierarchicalBoosting, config_table, input, name = "")
 }
 \arguments{
   \item{hierarchicalBoosting}{
@@ -31,8 +31,8 @@
 }
 \examples{
 # load input dataset
-input_path <- system.file("exdata/training_data.txt", package="hierarchicalBoosting")
-input <- read.table(input_path,header=TRUE,stringsAsFactors=FALSE)
+simulations.data.path <- system.file("exdata/training_data.txt", package="hierarchicalBoosting")
+simulations.data <- read.table(simulations.data.path,header=TRUE,stringsAsFactors=FALSE)
 
 # define individual boosting parameters
 boosting_1<-c()
@@ -71,10 +71,10 @@ bootstrap_iterations<-10
 bootstrap_sampling<-0.9
 
 # create hierarchicalBoosting object
-hierarchicalBoosting <- train.HierarchicalBoosting(input, config_table, bootstrap_iterations, bootstrap_sampling)
+hierarchicalBoosting <- train.HierarchicalBoosting(simulations.data, config_table, bootstrap_iterations, bootstrap_sampling)
 
 # create validation plots
-plot.HierarchicalBoosting(hierarchicalBoosting, config_table, input)
+plot.HierarchicalBoosting(hierarchicalBoosting, config_table, simulations.data)
 
 }
 
